@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to right, #333333, #CCCCCC);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    border: 10px solid;
+    border-radius: 5px;
+    border-color: rgb(65, 60, 60);
+    height: 70%;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    transition: border-color 0.5s; 
+}
+
+img:hover {
+    border-color: rgb(100, 150, 200); 
+}
+
+img::before,
+img::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s;
+}
+
+img:hover::before {
+    border-left-color: rgb(100, 150, 200);
+    border-right-color: rgb(100, 150, 200); 
+}
+
+img:hover::after {
+    border-top-color: rgb(100, 150, 200); 
+    border-bottom-color: rgb(100, 150, 200); 
+}
