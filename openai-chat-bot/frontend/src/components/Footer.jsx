@@ -6,12 +6,12 @@ const Footer = () => {
     // Using React fragments to avoid unnecessary divs
     <>
       <footer>
-        Created by Tyler O'Neil
-        <a target='_blank' href='https://github.com/tyleroneil72'>
+        Created by Maxim Dymchenko
+        <a target='_blank' href='https://github.com/maximdymchenko'>
           Github
         </a>
-        <a target='_blank' href='https://www.linkedin.com/in/tyler-oneil-dev/'>
-          Linkedin
+        <a target='_blank' href='https://leetcode.com/u/maximdym/'>
+          Leetcode
         </a>
       </footer>
     </>
